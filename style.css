@@ -38,5 +38,5 @@ body {
 
 .contacts input , .contacts textarea {
   background-color: #f0efeb;
-  border: 1px #b7b7a4;
+  border: 2px #a3b18a solid;
 }
