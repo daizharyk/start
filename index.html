@@ -4,56 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header name">
-      <h1>DIDAR AIZHARYK |BLOG </h1>
+      <h1>DIDAR AIZHARYK |BLOG</h1>
     </header>
-    <section class="section about_me" >
-      <h2>Обо мне</h2>
-      <img src="PXL_20220805_145802207.jpg" width="250" alt="Мой фотография" style="position: relative; left: 1%;" />
-      <p>Меня зовут Дидар я работаю геологом , также изучаю вэб разработку</p>
-      <h3>Мои хобби </h3>
-      <ul>
-        <li>Изучение программирования</li>
-        <li>Motion Design</li>
-        <li>Бег</li>
-      </ul>
-      <a href="https://www.instagram.com/d.motion_design/" target="_blank"
-        >Instagram</a
-      >
-      <h3>Технологии</h3>
-      <table border="1">
-        <thead>
-          <tr>
-            <th>Область</th>
-            <th>Технологии</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Backend</td>
-            <td>Nod.js, Express , C#,NET.</td>
-          </tr>
-          <tr>
-            <td>Frontend</td>
-            <td>React.js</td>
-          </tr>
-          <tr>
-            <td>Database </td>
-            <td>Mongo.DB,MySQL, SQL Server</td>
-          </tr>
-          <tr>
-            <td>Другое</td>
-            <td>GIT,DOCER,Google cloud palatform</td>
-          </tr>
-        </tbody>
-      </table>
+    <section class="section about_me">
+      <div class="section_element">
+        <h2>Обо мне</h2>
+        <img
+          src="PXL_20220805_145802207.jpg"
+          width="250"
+          alt="Мой фотография"
+        />
+        <p>Меня зовут Дидар я работаю геологом , также изучаю вэб разработку</p>
+        <a href="https://www.instagram.com/d.motion_design/" target="_blank"
+          >Instagram</a
+        >
+      </div>
+      <div class="section_element">
+        <h3>Мои хобби</h3>
+        <ul>
+          <li>Изучение программирования</li>
+          <li>Motion Design</li>
+          <li>Бег</li>
+        </ul>
+      </div>
+      <div class="section_element">
+        <h3>Технологии</h3>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Область</th>
+              <th>Технологии</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Backend</td>
+              <td>Nod.js, Express , C#,NET.</td>
+            </tr>
+            <tr>
+              <td>Frontend</td>
+              <td>React.js</td>
+            </tr>
+            <tr>
+              <td>Database</td>
+              <td>Mongo.DB,MySQL, SQL Server</td>
+            </tr>
+            <tr>
+              <td>Другое</td>
+              <td>GIT,DOCER,Google cloud palatform</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
-    <section class="section articles" >
+    <section class="section articles">
       <h2>Статии</h2>
-      <article>
+      <article class="section_element">
         <h3>Frontend-разработчик</h3>
         <p>
           Отвечает за верхушку айсберга, то есть за ту его часть, которую мы
@@ -62,16 +72,17 @@
         </p>
         <a href="frontend.html">Читать дальше</a>
       </article>
-      <article>
+      <article class="section_element">
         <h2>Backend-специалист</h2>
+        
         <p>
           Это главный по внутренностям сайта, ответственный за его серверный
           отдел.
         </p>
         <a href="backend.html">Читать дальше</a>
       </article>
-      <article>
-        <h2>Fullstack-разработчик </h2>
+      <article class="section_element">
+        <h2>Fullstack-разработчик</h2>
         <p>Это универсальный работник.</p>
         <a href="Fullstack.html">Читать дальше</a>
       </article>
@@ -94,6 +105,7 @@
           <br />
           <textarea name="message" id="message"></textarea>
         </div>
+        <br>
         <div>
           <button type="submit">Отправить</button>
         </div>

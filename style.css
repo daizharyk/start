@@ -5,26 +5,47 @@
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 .name {
   color: #132a13;
 }
+
 body {
   background-color: #ffffff;
+}
+
+.header {
+  background-color: #d8f3dc ;
+  color: #132a13;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 .section {
   border-radius: 10px;
   color: #283618;
+  padding: 20px;
+  width: 700px;
+  margin: auto;
+  margin-bottom: 5px;
 }
-.header {
-  background-color: #d8f3dc ;
-  color: #132a13;
+
+.section_element {
+  margin-bottom: 20px;
 }
+
+
 .about_me {
   background-color: #daf0ee;
   color: #132a13;
+}
+
+.about_me ul{
+  margin-left: 20px;
 }
 
 .articles {
