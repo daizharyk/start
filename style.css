@@ -80,3 +80,8 @@ body {
   flex: 1;
   align-self: center;
 }
+
+.flex-submit {
+  margin-left: 173px;
+  margin-top: 5px;
+}
