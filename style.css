@@ -82,10 +82,7 @@ body {
   align-self: center;
 }
 
-.flex-container2 {
-  display: flex;
-  align-self: baseline;
-}
+
 
 .button {
   flex: 3;
