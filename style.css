@@ -18,6 +18,45 @@ body {
   background-color: #ffffff;
 }
 
+.logo {
+  margin-top: 20px;
+}
+
+.logo:hover {
+  color: #132a13;
+}
+
+a {
+  color: #006d77;
+  text-decoration: none;
+  font-size: large;
+}
+
+a:hover {
+  color: #83c5be;
+}
+
+a:active {
+  color: #fb8500 ;
+}
+a:visited {
+  color: #fb8500;
+}
+
+
+button {
+  background-color: #f0efeb;
+  border: none;
+  padding: 8px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #eae2b7;
+}
+
+
 .header {
   background-color: #d8f3dc;
   color: #132a13;
@@ -25,6 +64,7 @@ body {
   margin-bottom: 25px;
   border-radius: 10px;
 }
+
 
 .section {
   border-radius: 10px;
@@ -47,6 +87,9 @@ body {
 
 .about_me ul {
   margin-left: 20px;
+}
+.about_me p {
+  margin-top: 15px;
 }
 
 .articles {
@@ -85,3 +128,6 @@ body {
 .button {
   flex: 3;
 }
+
+
+
