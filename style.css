@@ -58,7 +58,7 @@ body {
   color: #edf2f4;
 }
 
-.contacts input, .contacts textarea {
+.contacts input, .contacts textarea{
   background-color: #f0efeb;
   border: 2px #283618 solid;
   flex: 3;
@@ -76,12 +76,17 @@ body {
   flex-direction: column;
 }
 
+
 .form label{
   flex: 1;
   align-self: center;
 }
 
-.flex-submit {
-  margin-left: 173px;
-  margin-top: 6px;
+.flex-container2 {
+  display: flex;
+  align-self: baseline;
+}
+
+.button {
+  flex: 3;
 }
