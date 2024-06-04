@@ -26,7 +26,6 @@ body {
 a {
   color: #006d77;
   text-decoration: none;
-  font-size: large;
 }
 
 a:hover {
@@ -138,6 +137,7 @@ button:hover{
   padding: 0 20px;
   display: flex;
   align-items: center;
+  font-size: large;
 }
 
 .navigation li:hover {
@@ -154,4 +154,8 @@ button:hover{
 
 .table tbody tr:nth-child(n) {
   background-color: #18a4b1;
+}
+
+.section_element a {
+  font-size: medium;
 }
