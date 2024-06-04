@@ -22,9 +22,6 @@ body {
   margin-top: 20px;
 }
 
-.logo:hover {
-  color: #132a13;
-}
 
 a {
   color: #006d77;
@@ -58,11 +55,9 @@ button:hover{
 
 
 .header {
-  background-color: #d8f3dc;
+  background-color: #293241;
   color: #132a13;
-  padding: 10px;
   margin-bottom: 25px;
-  border-radius: 10px;
 }
 
 
@@ -129,5 +124,34 @@ button:hover{
   flex: 3;
 }
 
+.navigation ul {
+  display: flex;
+  list-style: none;
+  height: 60px;
+}
 
+.navigation a {
+  color:  #fffcf2;
+}
 
+.navigation li{
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navigation li:hover {
+  background-color: #3e5c76 ;
+}
+
+.table {
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table tbody tr:nth-child(n) {
+  background-color: #18a4b1;
+}
