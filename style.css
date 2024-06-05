@@ -28,10 +28,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #83c5be;
-}
-
 a:active {
   color: #fb8500 ;
 }
@@ -57,7 +53,7 @@ button:hover{
   background-color: #293241;
   color: #132a13;
   margin-bottom: 25px;
-  position: fixed;
+  position:fixed;
   width: 100%;
   top: 0px;
 }
@@ -95,6 +91,7 @@ button:hover{
 .about_me p {
   margin-top: 15px;
 }
+
 
 .section_element a:hover {
   color: #ee9b00;
@@ -195,4 +192,43 @@ button:hover{
   .table {
     width: 340px;
   }
+}
+
+
+.backend {
+  background-color: #bdeff3;
+  color: #132a13;
+  max-width: 700px;
+  border-radius:  10px;
+  padding: 20px;
+  margin: auto;
+}
+
+.backendh1 h1 {
+  padding-bottom: 5px;
+}
+
+.frontend {
+  background-color: #eae2b7;
+  max-width: 700px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+}
+
+.article_a a:hover {
+  color: #ee9b00;
+}
+
+.fullstack {
+  background-color: #283618;
+  color: #edf2f4;
+  max-width: 700px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+}
+
+.article_a h1 {
+  padding-bottom: 10px;
 }
