@@ -149,10 +149,12 @@ button:hover{
   display: flex;
   align-items: center;
   font-size: large;
+  transition: 0.2s;
 }
 
 .navigation li:hover {
   background-color: #3e5c76 ;
+  transform: scale(1.03);
 }
 
 .table {
@@ -222,3 +224,12 @@ button:hover{
   color: #ee9b00;
 }
 
+
+.logo {
+  transition: 0.3s;
+  shape-outside: -moz-element(5);
+}
+
+.logo:hover {
+  transform:  scale(1.2);
+}
