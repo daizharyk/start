@@ -150,6 +150,7 @@ button:hover{
   align-items: center;
   font-size: large;
   transition: 0.2s;
+  justify-content: space-around;
 }
 
 .navigation li:hover {
