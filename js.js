@@ -4,3 +4,5 @@ const contacts = document.getElementById('contacts')
 
 console.log(allArticles);
 console.log(contacts);
+
+allArticles.innerText = 'Все статьи (99)';
