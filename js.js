@@ -9,10 +9,17 @@ let articleCount = 3;
 
 allArticles.querySelector('a').textContent = `Все статьи (${articleCount})`;
 
-let lastArticlesSection = document.querySelectorAll(".section_element")[
-  document.querySelectorAll(".section_element").length -1
-];
+let lastArticlesSection = document.querySelector(".article_section")
 
-allArticles.addEventListener("click", ()=>{
+allArticles.addEventListener("click", (e)=>{
+  e.preventDefault();
   lastArticlesSection.scrollIntoView({ behavior: "smooth" });
 });
+
+
+let contactsSection = document.querySelector(".contacts");
+
+contacts.addEventListener("click",(e) =>{
+  e.preventDefault();
+  contactsSection.scrollIntoView({ behavior: "smooth"})
+})
