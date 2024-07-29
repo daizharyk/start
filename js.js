@@ -11,9 +11,15 @@ allArticles.querySelector('a').textContent = `Все статьи (${articleCoun
 
 let lastArticlesSection = document.querySelector(".article_section")
 
+
+
+let scrollIntoElement = (el) =>{
+  el.scrollIntoView({ behavior: "smooth"})
+};
+
 allArticles.addEventListener("click", (e)=>{
   e.preventDefault();
-  lastArticlesSection.scrollIntoView({ behavior: "smooth" });
+  scrollIntoElement(lastArticlesSection);
 });
 
 
@@ -21,5 +27,5 @@ let contactsSection = document.querySelector(".contacts");
 
 contacts.addEventListener("click",(e) =>{
   e.preventDefault();
-  contactsSection.scrollIntoView({ behavior: "smooth"})
-})
+  scrollIntoElement(contactsSection);
+});
