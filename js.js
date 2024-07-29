@@ -32,8 +32,8 @@ contacts.addEventListener("click",(e) =>{
 
 
 let articles = [
-  { name: "JavaScript", text: "JavaScript — мультипарадигменный язык программирования. Поддерживает объектно-ориентированный, императивный и функциональный стили." }
-  { name: "DOM", text: "DOM — это независящий от платформы и языка программный интерфейс, позволяющий программам и скриптам получить доступ к содержимому HTML-, XHTML- и XML-документов, а также изменять содержимое, структуру и оформление таких документов. "}
+  { name: "JavaScript", text: "JavaScript — мультипарадигменный язык программирования. Поддерживает объектно-ориентированный, императивный и функциональный стили." },
+  { name: "DOM", text: "DOM — это независящий от платформы и языка программный интерфейс, позволяющий программам и скриптам получить доступ к содержимому HTML-, XHTML- и XML-документов, а также изменять содержимое, структуру и оформление таких документов. "},
 ];
 
 let articleElements = articles.map ((article) =>{
@@ -45,3 +45,7 @@ let articleElements = articles.map ((article) =>{
   return articleCard;
 });
 console.log(articleElements);
+
+
+articlesSection.append(...articleElements);
+console.log(...articleElements);
