@@ -6,7 +6,7 @@ console.log(articlesData);
 // let articles = [
 //   ];
 
-export let articleElements = articles.map ((article) =>{
+export let articleElements = articlesData.articles.map ((article) =>{
   let { name, text, link } = article;
 
   let articleCard = document.createElement("article");
