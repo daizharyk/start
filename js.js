@@ -32,8 +32,11 @@ contacts.addEventListener("click",(e) =>{
 
 
 let articles = [
-  { name: "JavaScript", text: "JavaScript — мультипарадигменный язык программирования. Поддерживает объектно-ориентированный, императивный и функциональный стили.", link: "Читать дальше" },
-  { name: "DOM", text: "DOM — это независящий от платформы и языка программный интерфейс, позволяющий программам и скриптам получить доступ к содержимому HTML-, XHTML- и XML-документов, а также изменять содержимое, структуру и оформление таких документов.", link: "Читать дальше"},
+  { name: "Frontend-разработчик", text: "Отвечает за верхушку айсберга, то есть за ту его часть, которую мывидим. Пользователь заходит на определенный сайт и видит некую картинку.", link: "frontend.html" },
+  { name: "Backend-специалист", text: "Это главный по внутренностям сайта, ответственный за его серверный отдел.", link: "backend.html" },
+  { name: "Fullstack-разработчик", text: "Это универсальный работник.", link: "Fullstack.html"},
+  { name: "JavaScript", text: "JavaScript — мультипарадигменный язык программирования. Поддерживает объектно-ориентированный, императивный и функциональный стили.", link: "Fullstack.html"},
+  { name: "DOM", text: "DOM — это независящий от платформы и языка программный интерфейс, позволяющий программам и скриптам получить доступ к содержимому HTML-, XHTML- и XML-документов, а также изменять содержимое, структуру и оформление таких документов.", link: "Fullstack.html"},
 ];
 
 let articleElements = articles.map ((article) =>{
@@ -48,8 +51,8 @@ let articleElements = articles.map ((article) =>{
   paragraph.innerText = text;
   articleCard.append(paragraph);
   let linkbt = document.createElement("a");
-  linkbt.setAttribute("href", "frontend.html");
-  linkbt.innerText = link;
+  linkbt.setAttribute("href", link);
+  linkbt.innerText = "Читать далее";
   articleCard.append(linkbt);
   return articleCard;
 });
