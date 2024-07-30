@@ -1,4 +1,5 @@
-import { articleElements } from "./articles-htmlelements.js"
+import { articleElements } from "./htmlelements.js"
+
 
 const allArticles = document.getElementById('all_article')
 const contacts = document.getElementById('contacts')
@@ -33,10 +34,4 @@ contacts.addEventListener("click",(e) =>{
 });
 
 
-
-
-console.log(articleElements);
-
-
 articlesSection.append(...articleElements);
-console.log(...articleElements);
