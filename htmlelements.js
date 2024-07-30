@@ -1,10 +1,7 @@
-import articlesData from "./articles.json" assert { type: "json" };
+import articlesData from "./articles.json" with { type: "json" };
 
 console.log(articlesData);
 
-
-// let articles = [
-//   ];
 
 export let articleElements = articlesData.articles.map ((article) =>{
   let { name, text, link } = article;
