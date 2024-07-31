@@ -1,4 +1,4 @@
-import { articleElements } from "./htmlelements.js"
+import { articleElements } from "./articlesService.js"
 
 
 const allArticles = document.getElementById('all_article')
