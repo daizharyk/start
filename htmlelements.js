@@ -1,7 +1,9 @@
 import articlesData from "./articles.json" with { type: "json" };
 
-console.log(articlesData);
 
+
+let articlesSection = document.querySelector(".article_section")
+console.log(location.search);
 
 export let articleElements = articlesData.articles.map ((article) =>{
   let { name, text, link } = article;
@@ -20,3 +22,30 @@ export let articleElements = articlesData.articles.map ((article) =>{
   articleCard.append(linkbt);
   return articleCard;
 });
+
+const params = new URLSearchParams(location.search);
+
+const articleId = params.get("articleId");
+console.log(articleId);
+
+const currentArticle = articlesData.articles.find((article) => {
+  return article.id === Number(article.id);
+});
+
+if(currentArticle) {
+  const { name, text , link } = currentArticle;
+  let articleCard = document.createElement("article");
+  articleCard.className = "section_element";
+  let title = document.createElement("h2");
+  title.innerText = name;
+  articleCard.append(title);
+  let paragraph = document.createElement("p");
+  paragraph.innerText = text;
+  articleCard.append(paragraph);
+  let linkbt = document.createElement("a");
+  linkbt.setAttribute("href", link);
+  linkbt.innerText = "Читать далее";
+  articleCard.append(linkbt);
+  articlesSection.append(articleCard);
+}
+
