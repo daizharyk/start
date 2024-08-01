@@ -5,12 +5,12 @@ import articlesData from "./articles.json" with { type: "json" };
 const params = new URLSearchParams(location.search);
 
 const articleId = params.get("articleId");
-console.log(articleId);
+
 
 const currentArticle = articlesData.articles.find((article) => {
   return article.id === Number(articleId);
 });
-console.log(currentArticle);
+
 
 export let articleElements = articlesData.articles.map ((article) =>{
   let { name, text, link } = article;
@@ -29,5 +29,7 @@ export let articleElements = articlesData.articles.map ((article) =>{
   articleCard.append(linkbt);
   return articleCard;
 });
+
+
 
 

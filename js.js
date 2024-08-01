@@ -11,7 +11,7 @@ let articleCount = 5;
 allArticles.querySelector('a').textContent = `Все статьи (${articleCount})`;
 
 let articlesSection = document.querySelector(".article_section")
-
+console.log(articlesSection);
 
 
 let scrollIntoElement = (el) =>{
