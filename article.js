@@ -1,17 +1,10 @@
-
-
-const params = new URLSearchParams(location.search);
-
+import {currentArticle} from "./articlesService.js"
 let articlesSection = document.querySelector(".article_section")
 
-const articleId = params.get("articleId");
-console.log(articleId);
 
-const currentArticle = articlesData.articles.find((article) => {
-  return article.id === Number(articleId);
-});
-console.log(currentArticle);
-if(currentArticle) {
+
+
+export if(currentArticle) {
   const { name, text , link } = currentArticle;
   let articleCard = document.createElement("article");
   articleCard.className = "section_element";

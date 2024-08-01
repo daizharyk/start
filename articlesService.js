@@ -2,8 +2,15 @@ import articlesData from "./articles.json" with { type: "json" };
 
 
 
-let articlesSection = document.querySelector(".article_section")
+const params = new URLSearchParams(location.search);
 
+const articleId = params.get("articleId");
+console.log(articleId);
+
+const currentArticle = articlesData.articles.find((article) => {
+  return article.id === Number(articleId);
+});
+console.log(currentArticle);
 
 export let articleElements = articlesData.articles.map ((article) =>{
   let { name, text, link } = article;
